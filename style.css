@@ -11,5 +11,6 @@ main {
   font-family: sans-serif;
   color: white;
   text-align: center;
-  width: 80%;
+  font-size: 32px;
+  width: 90%;
 }

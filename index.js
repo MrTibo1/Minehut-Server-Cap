@@ -6,7 +6,7 @@ async function updateData() {
     const data = await response.json();
     const serverCount = data.server_count;
     const serverMax = data.server_max;
-    document.getElementById('cap').textContent = `${serverCount}/${serverMax}`;
+    document.getElementById('cap').textContent = `${serverCount}/${serverMax} servers online`;
     if (serverCount > serverMax) {
       document.body.style.backgroundColor = 'crimson';
       document.getElementById('info').textContent = `Yes! You will have to wait In Queue for your server to start`;
@@ -19,4 +19,4 @@ async function updateData() {
   }
 }
 updateData()
-setInterval(updateData, 5000);
+setInterval(updateData, 7500);
