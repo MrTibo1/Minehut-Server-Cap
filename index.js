@@ -6,7 +6,7 @@ async function updatePlayerCount() {
     const data = await response.json();
     const serverCount = data.server_count;
     const serverMax = data.server_max;
-    document.getElementById('cap').textContent = `${server_count}/${serveR_max}`;
+    document.getElementById('cap').textContent = `${serverCount}/${serverMax}`;
   } catch (error) {
     console.error(error);
   }
