@@ -16,5 +16,5 @@ async function updateData() {
     console.error(error);
   }
 }
-
+updateData()
 setInterval(updateData, 5000);
