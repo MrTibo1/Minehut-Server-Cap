@@ -9,8 +9,10 @@ async function updateData() {
     document.getElementById('cap').textContent = `${serverCount}/${serverMax}`;
     if (serverCount > serverMax) {
       document.body.style.backgroundColor = 'crimson';
+      document.getElementById('info').textContent = `Yes! You will have to wait In Queue for your server to start`;
     } else {
       document.body.style.backgroundColor = 'aquamarine';
+      document.getElementById('info').textContent = `No! You can start your server immediately`;
     }
   } catch (error) {
     console.error(error);
